@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2F2424;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.call {
+    text-align: center;
+}
+
+/* Header */
+.header {
+    font-size: 26px;
+    padding: 20px 0;
+}
+
+.header .logo-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo-menu > span {
+    color: #DDDDEE;
+}
+
+.header .colorText {
+    color: #DD2E2F;
+}
+
+.header span {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.header .logo {
+    width: 80px;
+    margin-right: 20px;
+    /* background: white; */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    margin-left: 40px;
+}
+
+.menu li a {
+    padding: 10px 0;
+}
+
+.menu li:first-child::after{
+    content: '';
+    display: block;
+    margin-left: 40px;
+    width: 3px;
+    height: 25px;
+    background: #347528;
+}
+
+.menu li a:hover{
+    transition: .3;
+    color: #dd2e2f;
+    text-decoration: none;
+}
+
+
+
+/* introducao */
+.introducao {
+    background: url('../../../img/bg-intro2.jpg') no-repeat center center;
+    width: 100%;
+    height: 400px;
+    padding-top: 120px;
+    background-size: cover;
+    box-shadow: 0 10px 15px 5px rgba(0,0,0,.14);
+}
+
+.introducao h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.introducao h1::before, .introducao h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #dd2e2f;
+    margin: 10px auto;
+}
+
+/* Sobre */
+.sobre {
+    padding: 100px 0;
+}
+
+.sobre h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sobre h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 10px auto 0 auto;
+    background: #347528;
+}
+
+.sobre p {
+    text-align: center;
+    line-height: 28px;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+}
+
+.sobre .call a {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+
+/* Produtos */
+.produtos {
+    margin-bottom: 50px;
+}
+.carousel-item img {
+    height: 75vh;
+    object-fit: cover;
+}
+
+.carousel-item h5 {
+    font-size: 36px;
+}
+
+.carousel-item p {
+    font-size: 20px;
+}
+
+/* sabores */
+
+.sabores h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.sabores h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 10px auto 0 auto;
+    background: #dd2e2f;
+}
+
+.sabores .call a {
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.sabores .call {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.pizzas {
+    position: relative;
+    margin-bottom: 40px;
+    /* box-shadow: 0 10px 155px 5px rgba(0,0,0,.14); */
+}
+
+.pizzas img {
+    max-height: 360px;
+    width: 100%;
+}
+
+.pizzas span {
+    position: absolute;
+    z-index: 200;
+    background: #347528;
+    height: 45px;
+    width: 250px;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    bottom: -20px;
+}
+
+/* footer */
+.footer {
+    background: #DD2E2F;
+    padding: 40px 0;
+}
+
+
+.footer h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #DDDDEE;
+    margin-top: 5px;
+    margin-bottom: 15px;
+} 
+
+.redes-sociais {
+    display: flex;
+}
+
+.redes-sociais li:nth-child(n+2):nth-child(-n+3) {
+    margin-left: 10px;
+}
+
+.redes-sociais img {
+    width: 100px;
+    padding: 10px;
+    border: 5px solid #DDDDEE;
+}
+
+.redes-sociais img:hover {
+    border-color: #347528;
+    transition: .3s;
+}
+
+/* oopy */
+
+.copy {
+    background: #DDDDEE;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.copy p {
+    color: #2F2424;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 18px;
+}

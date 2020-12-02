@@ -1,0 +1,73 @@
+.introducao {
+    background: url('../../../img/bg-sabores.jpg') no-repeat center center;
+    background-position: 0%;
+}
+
+.introducao h1 {
+    margin-top: 30px;
+}
+
+.introducao h1::before, .introducao h1::after {
+    background: #fff;
+}
+
+.separador {
+    position: relative;
+    /* z-index: 300; */
+}
+
+.separador img {
+    margin: 60px auto 0 auto;
+    width: 100px;
+    padding: 10px;
+    border: 3px dashed #347528;
+    z-index: 300 !important;
+}
+
+.separador::before, .separador::after {
+    content: '';
+    width: 100px;
+    display: block;
+    margin-left: 550px;
+    text-align: center;
+    height: 3px;
+    background: #DD2E2F;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+.separador::after {
+    margin-right: 550px;
+    right: 0;
+    left: auto;
+}
+
+.sabores-container {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.pizzas span {
+    bottom: -20px;
+    background: #347528;
+}
+
+.pizzas span.largeText {
+    width: 425px;
+}
+
+.ingredientes {
+    background-color: #DD2E2F;
+    height: 360px;
+    max-width: 365px;
+    padding: 10px;
+}
+
+.ingredientes-menu li {
+    font-size: 18px;
+}
+
+.ingredientes p {
+    font-size: 20px;
+}
